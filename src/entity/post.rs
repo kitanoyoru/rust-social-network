@@ -1,2 +1,35 @@
-// Placeholder for Post entity
-pub struct Post;
+use uuid::Uuid;
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum PostType {
+    Text,
+    Image,
+    Video,
+    Link,
+    Poll,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum PostVisibility {
+    Public,
+    Followers,
+    Private,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Post {
+    pub id: Uuid,
+    pub user_id: Uuid,
+    pub content: String,
+    pub post_type: PostType,
+    pub media_urls: Vec<String>,
+    pub visibility: PostVisibility,
+    pub like_count: i32,
+    pub comment_count: i32,
+    pub share_count: i32,
+    pub view_count: i32,
+    pub tags: Vec<String>,
+    pub location: Option<String>,
+}
+
