@@ -25,9 +25,12 @@ argon2 = "0.5.3"
 axum = "0.8.4"
 clap = { version = "4.4", features = ["derive"] }
 jsonwebtoken = "9.3.1"
+regex = "1.0"
 serde = { version = "1.0.219", features = ["derive", "rc", "serde_derive"] }
 tokio = { version = "1.47.1", features = ["full"] }
 cache = { path = "lib/cache" }
 jwt = { path = "lib/jwt" }
 database = { path = "lib/database" }
 utils = { path = "lib/utils" }
+chrono = { version = "0.4.41", features = ["serde"] }
+uuid = { version = "1.18.1", features = ["v4", "serde"] }

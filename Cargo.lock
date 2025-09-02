@@ -1708,13 +1708,16 @@ dependencies = [
  "argon2",
  "axum",
  "cache",
+ "chrono",
  "clap",
  "database",
  "jsonwebtoken",
  "jwt",
+ "regex",
  "serde",
  "tokio",
  "utils",
+ "uuid",
 ]
 
 [[package]]
