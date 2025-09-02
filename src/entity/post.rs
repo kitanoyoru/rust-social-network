@@ -25,11 +25,11 @@ pub struct Post {
     pub post_type: PostType,
     pub media_urls: Vec<String>,
     pub visibility: PostVisibility,
-    pub like_count: i32,
-    pub comment_count: i32,
-    pub share_count: i32,
-    pub view_count: i32,
+    pub like_count: u64,
+    pub comment_count: u64,
+    pub share_count: u64,
+    pub view_count: u64,
     pub tags: Vec<String>,
-    pub location: Option<String>,
+    pub loc: Option<String>,
 }
 
