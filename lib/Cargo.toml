@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "cache",
+    "jwt",
+    "database",
+    "utils"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Your Name <your.email@example.com>"]
+description = "Shared utilities for Rust Social Network"
+license = "MIT"
+repository = "https://github.com/yourusername/rust-social-network"
+keywords = ["social", "network", "rust"]
+categories = ["web-programming", "api-bindings"]

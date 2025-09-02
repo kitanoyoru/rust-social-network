@@ -1,0 +1,22 @@
+[package]
+name = "utils"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "General utilities for Rust Social Network"
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+anyhow = "1.0"
+tracing = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+bcrypt = "0.15"
+rand = "0.8"
+validator = { version = "0.16", features = ["derive"] }
+regex = "1.0"

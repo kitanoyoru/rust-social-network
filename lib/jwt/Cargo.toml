@@ -1,0 +1,18 @@
+[package]
+name = "jwt"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "JWT utilities for Rust Social Network"
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+jsonwebtoken = "9.3"
+serde = { version = "1.0", features = ["derive"] }
+anyhow = "1.0"
+tracing = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
